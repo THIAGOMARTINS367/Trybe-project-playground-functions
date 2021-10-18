@@ -61,7 +61,7 @@ function highestCountAssistant(arrayOfNumbers2) {
 function highestCount(arrayOfNumbers) {
   highestCountAssistant(arrayOfNumbers);
   if (exportIterator >= higherNumber) {
-    higherNumber =  exportIterator;
+    higherNumber = exportIterator;
     higherRepetition = repetition;
   }
   return higherRepetition;
