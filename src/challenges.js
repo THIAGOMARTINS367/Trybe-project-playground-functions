@@ -58,7 +58,6 @@ function highestCount(arrayOfNumbers) {
     }
     repetition = 0;
   }
- 
   return higherRepetition;
 }
 
@@ -83,23 +82,19 @@ function catAndMouse(mouse, cat1, cat2) {
   return compareDistance;
 }
 
-let arrayResult = [];
-function fizzBuzzAssistant(iterator) {
-  if (iterator % 3 === 0 && iterator % 5 === 0) {
-    arrayResult.push('fizzBuzz');
-  } else if (iterator % 3 === 0) {
-    arrayResult.push('fizz');
-  } else if (iterator % 5 === 0) {
-    arrayResult.push('buzz');
-  } else {
-    arrayResult.push('bug!');
-  }
-}
-
 // Desafio 8
 function fizzBuzz(numbers) {
+  let arrayResult = [];
   for (const iterator of numbers) {
-    fizzBuzzAssistant(iterator);
+    if (iterator % 3 === 0 && iterator % 5 === 0) {
+      arrayResult.push('fizzBuzz');
+    } else if (iterator % 3 === 0) {
+      arrayResult.push('fizz');
+    } else if (iterator % 5 === 0) {
+      arrayResult.push('buzz');
+    } else {
+      arrayResult.push('bug!');
+    }
   }
   return arrayResult;
 }
@@ -126,6 +121,8 @@ function encodeAssistant(iterator) {
     encodeAssistant2(iterator);
   }
 }
+
+console.log(fizzBuzz([9, 25]))
 
 // Desafio 9
 function encode(phraseOrWord) {
