@@ -94,25 +94,18 @@ function fizzBuzz(numbers) {
 
 let arrayEncode = [];
 function encodeAssistant(iterator) {
-  switch (iterator) {
-    case 'a':
-      arrayEncode.push(1);
-      break;
-    case 'e':
-      arrayEncode.push(2);
-      break;
-    case 'i':
-      arrayEncode.push(3);
-      break;
-    case 'o':
-      arrayEncode.push(4);
-      break;
-    case 'u':
-      arrayEncode.push(5);
-      break;
-    default:
-      arrayEncode.push(iterator);
-      break;
+  if (iterator === 'a') {
+    arrayEncode.push(1);
+  } else if (iterator === 'e') {
+    arrayEncode.push(2);
+  } else if (iterator === 'i') {
+    arrayEncode.push(3);
+  } else if (iterator === 'o') {
+    arrayEncode.push(4);
+  } else if (iterator === 'u') {
+    arrayEncode.push(5);
+  } else {
+    arrayEncode.push(iterator);
   }
 }
 
@@ -120,7 +113,7 @@ function encodeAssistant(iterator) {
 function encode(phraseOrWord) {
   let string = '';
   for (const iterator of phraseOrWord) {
-    encodeAssistant(iterator)
+    encodeAssistant(iterator);
   }
   for (const iterator2 of arrayEncode) {
     string += iterator2;
@@ -130,32 +123,25 @@ function encode(phraseOrWord) {
 
 let arrayDecode = [];
 function decodeAssistant(iterator) {
-  switch (iterator) {
-    case '1':
-      arrayDecode.push('a');
-      break;
-    case '2':
-      arrayDecode.push('e');
-      break;
-    case '3':
-      arrayDecode.push('i');
-      break;
-    case '4':
-      arrayDecode.push('o');
-      break;
-    case '5':
-      arrayDecode.push('u');
-      break;
-    default:
-      arrayDecode.push(iterator);
-      break;
+  if (iterator === '1') {
+    arrayEncode.push('a');
+  } else if (iterator === '2') {
+    arrayEncode.push('e');
+  } else if (iterator === '3') {
+    arrayEncode.push('i');
+  } else if (iterator === '4') {
+    arrayEncode.push('o');
+  } else if (iterator === '5') {
+    arrayEncode.push('u');
+  } else {
+    arrayEncode.push(iterator);
   }
 }
 
 function decode(phraseOrWordEncoding) {
   let string = '';
   for (const iterator of phraseOrWordEncoding) {
-    decodeAssistant(iterator)
+    decodeAssistant(iterator);
   }
   for (const iterator2 of arrayDecode) {
     string += iterator2;
