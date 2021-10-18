@@ -44,10 +44,10 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(arrayOfNumbers) {
-  let repetition = 0;
   let higherNumber = 0;
   let higherRepetition = 0;
   for (const iterator of arrayOfNumbers) {
+    let repetition = 0;
     for (const iterator2 of arrayOfNumbers) {
       if (iterator2 === iterator) {
         repetition += 1;
@@ -57,7 +57,6 @@ function highestCount(arrayOfNumbers) {
       higherNumber = iterator;
       higherRepetition = repetition;
     }
-    repetition = 0;
   }
   return higherRepetition;
 }
@@ -75,19 +74,23 @@ function catAndMouse(mouse, cat1, cat2) {
   return compareDistance;
 }
 
+let arrayResult = [];
+function fizzBuzzAssistant(iterator) {
+  if (iterator % 3 === 0 && iterator % 5 === 0) {
+    arrayResult.push('fizzBuzz');
+  } else if (iterator % 3 === 0) {
+    arrayResult.push('fizz');
+  } else if (iterator % 5 === 0) {
+    arrayResult.push('buzz');
+  } else {
+    arrayResult.push('bug!');
+  }
+}
+
 // Desafio 8
 function fizzBuzz(numbers) {
-  let arrayResult = [];
   for (const iterator of numbers) {
-    if (iterator % 3 === 0 && iterator % 5 === 0) {
-      arrayResult.push('fizzBuzz');
-    } else if (iterator % 3 === 0) {
-      arrayResult.push('fizz');
-    } else if (iterator % 5 === 0) {
-      arrayResult.push('buzz');
-    } else {
-      arrayResult.push('bug!');
-    }
+    fizzBuzzAssistant(iterator);
   }
   return arrayResult;
 }
