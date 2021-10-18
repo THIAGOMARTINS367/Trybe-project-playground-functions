@@ -44,18 +44,16 @@ function footballPoints(wins, ties) {
 
 let higherNumber = 0;
 let higherRepetition = 0;
+let exportIterator = 0;
 
 function highestCountAssistant(arrayOfNumbers2) {
   for (const iterator of arrayOfNumbers2) {
     let repetition = 0;
+    exportIterator = iterator;
     for (const iterator2 of arrayOfNumbers2) {
       if (iterator2 === iterator) {
         repetition += 1;
       }
-    }
-    if (iterator >= higherNumber) {
-      higherNumber = iterator;
-      higherRepetition = repetition;
     }
   }
 }
@@ -63,7 +61,10 @@ function highestCountAssistant(arrayOfNumbers2) {
 // Desafio 6
 function highestCount(arrayOfNumbers) {
   highestCountAssistant(arrayOfNumbers);
-
+  if (exportIterator >= higherNumber) {
+    higherNumber =  exportIterator;
+    higherRepetition = repetition;
+  }
   return higherRepetition;
 }
 
