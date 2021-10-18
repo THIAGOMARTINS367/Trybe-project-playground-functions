@@ -103,6 +103,16 @@ function fizzBuzz(numbers) {
 }
 
 let arrayEncode = [];
+function encodeAssistant2(iterator2) {
+  if (iterator2 === 'o') {
+    arrayEncode.push(4);
+  } else if (iterator2 === 'u') {
+    arrayEncode.push(5);
+  } else {
+    arrayEncode.push(iterator2);
+  }
+}
+
 function encodeAssistant(iterator) {
   if (iterator === 'a') {
     arrayEncode.push(1);
@@ -112,16 +122,6 @@ function encodeAssistant(iterator) {
     arrayEncode.push(3);
   } else {
     encodeAssistant2(iterator)
-  }
-}
-
-function encodeAssistant2(iterator2) {
-  if (iterator2 === 'o') {
-    arrayEncode.push(4);
-  } else if (iterator2 === 'u') {
-    arrayEncode.push(5);
-  } else {
-    arrayEncode.push(iterator2);
   }
 }
 
