@@ -99,36 +99,24 @@ function fizzBuzz(numbers) {
   return arrayResult;
 }
 
-let arrayEncode = [];
-function encodeAssistant2(iterator2) {
-  if (iterator2 === 'o') {
-    arrayEncode.push(4);
-  } else if (iterator2 === 'u') {
-    arrayEncode.push(5);
-  } else {
-    arrayEncode.push(iterator2);
-  }
-}
-
-function encodeAssistant(iterator) {
-  if (iterator === 'a') {
-    arrayEncode.push(1);
-  } else if (iterator === 'e') {
-    arrayEncode.push(2);
-  } else if (iterator === 'i') {
-    arrayEncode.push(3);
-  } else {
-    encodeAssistant2(iterator);
-  }
-}
-
-console.log(fizzBuzz([9, 25]))
-
 // Desafio 9
 function encode(phraseOrWord) {
+  let arrayEncode = [];
   let string = '';
   for (const iterator of phraseOrWord) {
-    encodeAssistant(iterator);
+    if (iterator === 'a') {
+      arrayEncode.push(1);
+    } else if (iterator === 'e') {
+      arrayEncode.push(2);
+    } else if (iterator === 'i') {
+      arrayEncode.push(3);
+    } else if (iterator === 'o') {
+      arrayEncode.push(4);
+    } else if (iterator === 'u') {
+      arrayEncode.push(5);
+    } else {
+      arrayEncode.push(iterator);
+    }
   }
   for (const iterator2 of arrayEncode) {
     string += iterator2;
@@ -136,34 +124,23 @@ function encode(phraseOrWord) {
   return string;
 }
 
-let arrayDecode = [];
-function decodeAssistant2(iterator2) {
-  if (iterator2 === '4') {
-    arrayEncode.push('o');
-  } else if (iterator2 === '5') {
-    arrayEncode.push('u');
-  } else {
-    arrayEncode.push(iterator2);
-  }
-  
-}
-
-function decodeAssistant(iterator) {
-  if (iterator === '1') {
-    arrayEncode.push('a');
-  } else if (iterator === '2') {
-    arrayEncode.push('e');
-  } else if (iterator === '3') {
-    arrayEncode.push('i');
-  } else {
-    decodeAssistant2(iterator)
-  }
-}
-
 function decode(phraseOrWordEncoding) {
+  let arrayDecode = [];
   let string = '';
   for (const iterator of phraseOrWordEncoding) {
-    decodeAssistant(iterator);
+    if (iterator === '1') {
+      arrayDecode.push('a');
+    } else if (iterator === '2') {
+      arrayDecode.push('e');
+    } else if (iterator === '3') {
+      arrayDecode.push('i');
+    } else if (iterator === '4') {
+      arrayDecode.push('o');
+    } else if (iterator === '5') {
+      arrayDecode.push('u');
+    } else {
+      arrayDecode.push(iterator);
+    }
   }
   for (const iterator2 of arrayDecode) {
     string += iterator2;
