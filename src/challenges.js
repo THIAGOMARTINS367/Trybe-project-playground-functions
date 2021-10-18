@@ -29,7 +29,7 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(array) {
   let lastAndFirst = '';
-  lastAndFirst = array[array.length - 1] + ',' + array[0];
+  lastAndFirst = array[array.length - 1] + array[0];
   return lastAndFirst;
 }
 
@@ -145,6 +145,17 @@ function encode(phraseOrWord) {
 }
 
 let arrayDecode = [];
+function decodeAssistant2(iterator2) {
+  if (iterator2 === '4') {
+    arrayEncode.push('o');
+  } else if (iterator2 === '5') {
+    arrayEncode.push('u');
+  } else {
+    arrayEncode.push(iterator2);
+  }
+  
+}
+
 function decodeAssistant(iterator) {
   if (iterator === '1') {
     arrayEncode.push('a');
@@ -152,12 +163,8 @@ function decodeAssistant(iterator) {
     arrayEncode.push('e');
   } else if (iterator === '3') {
     arrayEncode.push('i');
-  } else if (iterator === '4') {
-    arrayEncode.push('o');
-  } else if (iterator === '5') {
-    arrayEncode.push('u');
   } else {
-    arrayEncode.push(iterator);
+    decodeAssistant2(iterator)
   }
 }
 
