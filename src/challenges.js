@@ -61,8 +61,6 @@ function highestCount(arrayOfNumbers) {
   return higherRepetition;
 }
 
-console.log(highestCount([0, 0, 0]))
-
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let compareDistance = '';
