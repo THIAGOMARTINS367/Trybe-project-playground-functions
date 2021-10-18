@@ -45,16 +45,16 @@ function footballPoints(wins, ties) {
 let higherNumber = 0;
 let higherRepetition = 0;
 let exportIterator = 0;
-
+let repetition = 0;
 function highestCountAssistant(arrayOfNumbers2) {
   for (const iterator of arrayOfNumbers2) {
-    let repetition = 0;
     exportIterator = iterator;
     for (const iterator2 of arrayOfNumbers2) {
       if (iterator2 === iterator) {
         repetition += 1;
       }
     }
+    repetition = 0;
   }
 }
 
@@ -110,12 +110,18 @@ function encodeAssistant(iterator) {
     arrayEncode.push(2);
   } else if (iterator === 'i') {
     arrayEncode.push(3);
-  } else if (iterator === 'o') {
+  } else {
+    encodeAssistant2(iterator)
+  }
+}
+
+function encodeAssistant2(iterator2) {
+  if (iterator2 === 'o') {
     arrayEncode.push(4);
-  } else if (iterator === 'u') {
+  } else if (iterator2 === 'u') {
     arrayEncode.push(5);
   } else {
-    arrayEncode.push(iterator);
+    arrayEncode.push(iterator2);
   }
 }
 
