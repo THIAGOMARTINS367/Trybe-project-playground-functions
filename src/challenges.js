@@ -28,9 +28,8 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-  let lastAndFirst = [];
-  lastAndFirst.push(array[array.length - 1]);
-  lastAndFirst.push(array[0]);
+  let lastAndFirst = '';
+  lastAndFirst = array[array.length - 1] + ', ' + array[0];
   return lastAndFirst;
 }
 
