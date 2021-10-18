@@ -41,11 +41,11 @@ function footballPoints(wins, ties) {
   return points;
 }
 
-let higherNumber = 0;
-let higherRepetition = 0;
-let repetition = 0;
 // Desafio 6
 function highestCount(arrayOfNumbers) {
+  let higherNumber = arrayOfNumbers[0];
+  let higherRepetition = 0;
+  let repetition = 0;
   for (const iterator of arrayOfNumbers) {
     for (const iterator2 of arrayOfNumbers) {
       if (iterator2 === iterator) {
@@ -60,6 +60,8 @@ function highestCount(arrayOfNumbers) {
   }
   return higherRepetition;
 }
+
+console.log(highestCount([0, 0, 0]))
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
