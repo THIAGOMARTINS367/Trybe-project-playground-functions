@@ -92,31 +92,35 @@ function fizzBuzz(numbers) {
   return arrayResult;
 }
 
+let arrayEncode = [];
+function encodeAssistant(iterator) {
+  switch (iterator) {
+    case 'a':
+      arrayEncode.push(1);
+      break;
+    case 'e':
+      arrayEncode.push(2);
+      break;
+    case 'i':
+      arrayEncode.push(3);
+      break;
+    case 'o':
+      arrayEncode.push(4);
+      break;
+    case 'u':
+      arrayEncode.push(5);
+      break;
+    default:
+      arrayEncode.push(iterator);
+      break;
+  }
+}
+
 // Desafio 9
 function encode(phraseOrWord) {
-  let arrayEncode = [];
   let string = '';
   for (const iterator of phraseOrWord) {
-    switch (iterator) {
-      case 'a':
-        arrayEncode.push(1);
-        break;
-      case 'e':
-        arrayEncode.push(2);
-        break;
-      case 'i':
-        arrayEncode.push(3);
-        break;
-      case 'o':
-        arrayEncode.push(4);
-        break;
-      case 'u':
-        arrayEncode.push(5);
-        break;
-      default:
-        arrayEncode.push(iterator);
-        break;
-    }
+    encodeAssistant(iterator)
   }
   for (const iterator2 of arrayEncode) {
     string += iterator2;
@@ -124,30 +128,34 @@ function encode(phraseOrWord) {
   return string;
 }
 
+let arrayDecode = [];
+function decodeAssistant(iterator) {
+  switch (iterator) {
+    case '1':
+      arrayDecode.push('a');
+      break;
+    case '2':
+      arrayDecode.push('e');
+      break;
+    case '3':
+      arrayDecode.push('i');
+      break;
+    case '4':
+      arrayDecode.push('o');
+      break;
+    case '5':
+      arrayDecode.push('u');
+      break;
+    default:
+      arrayDecode.push(iterator);
+      break;
+  }
+}
+
 function decode(phraseOrWordEncoding) {
-  let arrayDecode = [];
   let string = '';
   for (const iterator of phraseOrWordEncoding) {
-    switch (iterator) {
-      case '1':
-        arrayDecode.push('a');
-        break;
-      case '2':
-        arrayDecode.push('e');
-        break;
-      case '3':
-        arrayDecode.push('i');
-        break;
-      case '4':
-        arrayDecode.push('o');
-        break;
-      case '5':
-        arrayDecode.push('u');
-        break;
-      default:
-        arrayDecode.push(iterator);
-        break;
-    }
+    decodeAssistant(iterator)
   }
   for (const iterator2 of arrayDecode) {
     string += iterator2;
