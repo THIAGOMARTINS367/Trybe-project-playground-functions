@@ -80,21 +80,49 @@ function generatePhoneNumber(array) {
   }
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]))
-
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let differenceAB = Math.abs(lineA - lineB);
+  let differenceAC = Math.abs(lineA - lineC);
+  let differenceBC = Math.abs(lineB - lineC);
+  let result = false;
+
+  if (lineA < lineB + lineC && lineA > differenceAB && lineA > differenceAC && lineA > differenceBC) {
+    result = true;
+
+  } else  if (lineB < lineA + lineC && lineB > differenceAB && lineB > differenceAC && lineB > differenceBC) {
+    result = true;
+
+  } else  if (lineC < lineA + lineB && lineC > differenceAB && lineC > differenceAC && lineC > differenceBC) {
+    result = true;
+
+  }
+
+  return result
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  let glassesOfWater = 0;
+  let resultString = ''
+  for (const iterator of string) {
+    if (iterator == '1' || iterator == '2' || iterator == '3' || iterator == '4' || iterator == '5' || iterator == '6' || iterator == '7' || iterator == '8' || iterator == '9') {
+      glassesOfWater += parseInt(iterator);
+    }
+  }
+  if (glassesOfWater == 1) {
+    resultString = glassesOfWater + ' copo de água'
+  } else {
+    resultString = glassesOfWater + ' copos de água'
+  }
+
+  return resultString
 }
+console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'))
 
 module.exports = {
   generatePhoneNumber,
   techList,
   hydrate,
   triangleCheck,
-};
+}
