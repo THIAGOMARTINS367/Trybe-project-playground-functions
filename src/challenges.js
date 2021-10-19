@@ -124,8 +124,6 @@ function encode(phraseOrWord) {
   return string;
 }
 
-console.log(encode('hi there!'))
-
 function decode(phraseOrWordEncoding) {
   let arrayDecode = [];
   let string = '';
