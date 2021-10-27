@@ -19,7 +19,7 @@ O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos
 - [Requisitos do projeto](#requisitos-do-projeto)
 
     `Requisitos obrigatórios:`
-    - [1 - Crie uma função usando o operador &&](#1---crie-uma-função-usando-o-operador-)
+    - [1 - Crie uma função usando o operador &&](#1---adicione-à-sua-lista-o-título-minha-lista-de-tarefas-em-uma-tag-)
     - [2 - Crie uma função que calcule a área de um triângulo](#2---crie-uma-função-que-calcule-a-área-de-um-triângulo)
     - [3 - Crie uma função que divida a frase](#3---crie-uma-função-que-divida-a-frase)
     - [4 - Crie uma função que use concatenação de strings](#4---crie-uma-função-que-use-concatenação-de-strings)
