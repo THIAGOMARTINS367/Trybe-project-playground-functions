@@ -1,4 +1,4 @@
-### Termos e acordos
+### Descrição
 
 Este projeto foi desenvolvido durante o período de Curso da Trybe 🚀.
 
