@@ -8,6 +8,7 @@ O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos
 
 - [Habilidades](#habilidades-requeridas)
 - [O que foi desenvolvido](#o-que-foi-desenvolvido)
+- [Tecnologias usadas](#tecnologias-usadas)
 - [Antes de inicializar o projeto](#antes-de-inicializar-o-projeto-na-máquina-local)
 - [Requisitos do projeto](#requisitos-do-projeto)
 
@@ -54,18 +55,23 @@ O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos
 
 ---
 
+## Tecnologias usadas
+
+- `JavaScript`
+---
+
 ## ANTES DE INICIALIZAR O PROJETO NA MÁQUINA LOCAL:
 
 1. Clone o repositório
-  * `git clone git@github.com:THIAGOMARTINS367/Trybe-project-frontend-online-store.git`
+  * `git clone `
   * Entre na pasta do repositório na sua máquina:
-    * `Trybe-project-frontend-online-store`
+    * `Trybe-project-playground-functions`
 
 2. Instale as dependências
    * `npm install`
 
-3.  Inicialize o projeto
-    * Utilize o comando `npm start` dentro da pasta `Trybe-project-frontend-online-store` para rodar o projeto em sua máquina.
+3. Inicialize o projeto
+    * Utilize o comando `npm start` dentro da pasta `Trybe-project-playground-functions` para rodar o projeto em sua máquina.
 
 ---
 
