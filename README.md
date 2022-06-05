@@ -6,20 +6,13 @@ O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos
 
 # Sumário
 
-- [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Data de Entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-- [Como desenvolver](#como-desenvolver)
-  - [Linter](#linter)
-  - [Avaliador Automático](#avaliador-automático)
+- [Habilidades](#habilidades-requeridas)
+- [O que foi desenvolvido](#o-que-foi-desenvolvido)
+- [Antes de inicializar o projeto](#antes-de-inicializar-o-projeto-na-máquina-local)
 - [Requisitos do projeto](#requisitos-do-projeto)
 
     `Requisitos obrigatórios:`
-    - [1 - Crie uma função usando o operador &&](#1---adicione-à-sua-lista-o-título-minha-lista-de-tarefas-em-uma-tag-)
+    - [1 - Crie uma função usando o operador &&](#1---crie-uma-função-usando-o-operador-&&)
     - [2 - Crie uma função que calcule a área de um triângulo](#2---crie-uma-função-que-calcule-a-área-de-um-triângulo)
     - [3 - Crie uma função que divida a frase](#3---crie-uma-função-que-divida-a-frase)
     - [4 - Crie uma função que use concatenação de strings](#4---crie-uma-função-que-use-concatenação-de-strings)
@@ -33,12 +26,9 @@ O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos
     `Requisitos bônus:`
     - [11 - Crie uma função de Número de telefone](#11---crie-uma-função-de-número-de-telefone)
     - [12 - Crie uma função de Condição de existência de um triângulo](#12---crie-uma-função-de-condição-de-existência-de-um-triângulo)
-    - [13 - Crie uma função de Boas Vindas ao Bar da Trybe!](#13---crie-uma-função-de-boas-vindas-ao-bar-da-trybe!)
-- [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos Finais](#avisos-finais)
+    - [13 - Crie uma função de Boas Vindas ao Bar da Trybe](#13---crie-uma-função-de-boas-vindas-ao-bar-da-trybe)
 
-# Habilidades
+# Habilidades requeridas
 
 - Escrever códigos em JavaScript que usam variáveis e tipos primitivos;
 - Utilizar conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no seu código;
@@ -51,28 +41,37 @@ O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos
 - Utilizar o comando for/in ;
 - Utilizar funções para organizar e estruturar o seu código;
 
-# Entregáveis
-
-Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório.
-
-Este Pull Request deverá conter os arquivos `challenges.js` e `challenges2.js` com suas funções implementadas.
-
-Todas as funções já estão declaradas nos arquivos `challenges.js` e `challenges2.js`. Você pode criar outras funções para auxiliarem as já existentes. Contudo **Não altere o nome das funções que já existem**.
-
 **Os parâmetros das funções já existentes podem e devem ser alterados.**
+
+### Todas as funções já estão declaradas nos arquivos `challenges.js` e `challenges2.js`. Você pode criar outras funções para auxiliarem as já existentes. Contudo **Não altere o nome das funções que já existem**.
 
 ## ⚠️ É importante que seus arquivos não tenham o nome alterado! ⚠️
 ---
 
-## O que deverá ser desenvolvido
+## O que foi desenvolvido
 
-- Você vai implementar funções a partir de requisitos;
-- Você vai desenvolver funções seguindo os requisitos especificados para o correto comportamento de cada uma delas.
+- Foi desenvolvido funções variadas seguindo os requisitos especificados para o correto comportamento de cada uma delas.
 
-# Descrição dos Requisitos do Projeto.
 ---
 
-### 1 - Crie uma função usando o operador &&
+## ANTES DE INICIALIZAR O PROJETO NA MÁQUINA LOCAL:
+
+1. Clone o repositório
+  * `git clone git@github.com:THIAGOMARTINS367/Trybe-project-frontend-online-store.git`
+  * Entre na pasta do repositório na sua máquina:
+    * `Trybe-project-frontend-online-store`
+
+2. Instale as dependências
+   * `npm install`
+
+3.  Inicialize o projeto
+    * Utilize o comando `npm start` dentro da pasta `Trybe-project-frontend-online-store` para rodar o projeto em sua máquina.
+
+---
+
+## Requisitos do Projeto
+
+### 1 - Crie uma função usando o operador `&&`
 
 JavaScript possui um operador lógico `&&`, o qual recebe dois valores e retorna `true` se ambos os valores são verdadeiros, e retorna `false` se algum dos valores não o for.
 
@@ -81,7 +80,7 @@ Considerando isso, implemente na função `compareTrue`, um código que ao receb
 - Retornar `true` se ambos os valores forem verdadeiros;
 - Retornar `false` se um ou ambos os parâmetros forem falsos.
 
-Faça a função somente utilizando o operador `&&`.
+Faça a função somente utilizando o operador &&
 
 **O que será verificado:**
 
@@ -323,7 +322,7 @@ Exemplo: o retorno de `triangleCheck(10, 14, 8)` deverá ser `true`.
 
 - Retorne true quando a medida de qualquer um dos lados seja menor que a soma das medidas dos outros dois e maior que o valor absoluto da diferença entre essas medidas.
 
-### 13 - Crie uma função de boas vindas ao Bar da Trybe!
+### 13 - Crie uma função de boas vindas ao Bar da Trybe
 
 Segundo as regras desse bar, a cada bebida deve-se beber um copo de água para que não se tenha ressaca.
 
