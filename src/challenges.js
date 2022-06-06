@@ -174,10 +174,10 @@ function fizzBuzz(numbers) {
 
 console.log('function ---> "fizzBuzz(numbers)"');
 console.log(`- Recebe um array de números e retorna um array da seguinte forma:`);
-console.log('Para cada número do Array que seja divisível apenas por 3, apresente uma string "fizz";');
-console.log('Para cada número do Array que seja divisível apenas por 5, apresente uma string "buzz";');
-console.log('Caso o número seja divisível por 3 e 5, retorne a string "fizzBuzz";');
-console.log('Caso o número não possa ser dividido por 3 nem por 5, retorne a string "bug!";');
+console.log('- Para cada número do Array que seja divisível apenas por 3, apresente uma string "fizz";');
+console.log('- Para cada número do Array que seja divisível apenas por 5, apresente uma string "buzz";');
+console.log('- Caso o número seja divisível por 3 e 5, retorne a string "fizzBuzz";');
+console.log('- Caso o número não possa ser dividido por 3 nem por 5, retorne a string "bug!";');
 console.log('');
 console.log(`calling ---> fizzBuzz([2, 15, 7, 9, 45])`);
 console.log('Result:', fizzBuzz([2, 15, 7, 9, 45]));
