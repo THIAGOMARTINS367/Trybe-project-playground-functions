@@ -65,7 +65,7 @@ O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos
 1. Clone o repositório
   * `git clone git@github.com:THIAGOMARTINS367/Trybe-project-playground-functions.git`
   * Entre na pasta do repositório na sua máquina:
-    * `Trybe-project-playground-functions`
+    * `cd Trybe-project-playground-functions`
 
 2. Instale as dependências
    * `npm install`
